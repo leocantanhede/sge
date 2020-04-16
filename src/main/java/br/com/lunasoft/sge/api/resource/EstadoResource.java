@@ -13,7 +13,7 @@ import br.com.lunasoft.sge.api.repository.EstadoRepository;
 
 @RestController
 @RequestMapping("/estados")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://lunasoft-sge.herokuapp.com")
 public class EstadoResource {
 
 	@Autowired
