@@ -15,7 +15,7 @@ import br.com.lunasoft.sge.api.repository.CidadeRepository;
 
 @RestController
 @RequestMapping("/cidades")
-@CrossOrigin(origins = "https://lunasoft-sge.herokuapp.com")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CidadeResource {
 
 	@Autowired

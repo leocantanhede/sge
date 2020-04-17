@@ -1,7 +1,6 @@
 package br.com.lunasoft.sge.api.model;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -34,52 +33,31 @@ public class Documento implements Serializable {
 	private Integer id;
 	
 	@NotNull
-	@Column(name = "IDENTIDADE")
-	private String identidade;
-	
-	@NotNull
-	@Column(name = "EMISSOR")
-	private String emissor;
-	
-	@NotNull
-	@Column(name = "DATA_EXPEDICAO")
-	private LocalDate dataExpedicao;
-	
-	@NotNull
-	@Column(name = "CPF")
-	private String cpf;
-	
-	@NotNull
 	@Column(name = "TITULO")
 	private String titulo;
 	
 	@NotNull
 	@Column(name = "ZONA")
-	private Short zona;
+	private String zona;
 	
 	@NotNull
 	@Column(name = "SECAO")
-	private Short secao;
+	private String secao;
 	
 	@NotNull
-	@Column(name = "MUNICIPIO_UF")
-	private String municipioUf;
+	@Column(name = "LOCAL_VOTACAO")
+	private String localVotacao;
 
 	public Documento(Integer id) {
 		this.id = id;
 	}
-	
-	public Documento(Integer id, String identidade, String emissor, LocalDate dataExpedicao, String cpf, String titulo,
-			Short zona, Short secao, String municipioUf) {
+
+	public Documento(Integer id, String titulo, String zona, String secao, String localVotacao) {
 		this.id = id;
-		this.identidade = identidade;
-		this.emissor = emissor;
-		this.dataExpedicao = dataExpedicao;
-		this.cpf = cpf;
 		this.titulo = titulo;
 		this.zona = zona;
 		this.secao = secao;
-		this.municipioUf = municipioUf;
+		this.localVotacao = localVotacao;
 	}
-	
+
 }

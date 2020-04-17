@@ -22,7 +22,7 @@ public class EleitorRepositoryImpl implements EleitorRepositoryQuery {
 		sb.append("SELECT e FROM Eleitor e ");
 		sb.append("JOIN e.documento d ");
 		sb.append("JOIN e.contato c ");
-		sb.append("WHERE 1=1 ");
+		sb.append("WHERE 1 = 1 ");
 		
 		if (!StringUtils.isEmpty(filtro.getNome())) {
 			sb.append("AND LOWER(e.nome) LIKE CONCAT('%', CONCAT(LOWER(:nome),'%'))");

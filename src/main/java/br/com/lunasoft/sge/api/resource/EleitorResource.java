@@ -25,7 +25,7 @@ import br.com.lunasoft.sge.api.repository.filter.Filtro;
 
 @RestController
 @RequestMapping("/eleitores")
-@CrossOrigin(origins = "https://lunasoft-sge.herokuapp.com")
+@CrossOrigin(origins = "http://localhost:4200")
 public class EleitorResource {
 
 	@Autowired

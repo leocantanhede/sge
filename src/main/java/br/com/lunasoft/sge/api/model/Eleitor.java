@@ -48,6 +48,7 @@ public class Eleitor implements Serializable {
 	@Column(name = "PAI")
 	private String nomePai;
 	
+	@NotNull
 	@Column(name = "MAE")
 	private String nomeMae;
 	
